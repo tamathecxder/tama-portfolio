@@ -1,0 +1,8 @@
+<div class="justify-center items-center h-screen bg-white bg-opacity-80 transition-opacity duration-500" [ngClass]="{ 'opacity-0 hidden': !isLoading, 'opacity-100 flex': isLoading }">
+    <div class="flex flex-col items-center">
+        <div class="loader-icon">
+            <div class="w-16 h-16 border-8 border-t-black border-gray-200 rounded-full animate-spin"></div>
+        </div>
+        <span class="mt-4 text-xl text-fullgray">Loading...</span>
+    </div>
+</div>
