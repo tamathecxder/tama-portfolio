@@ -1,0 +1,124 @@
+<!-- <app-loader [isLoading]="isLoading"></app-loader> -->
+
+<div *ngIf="!isLoading">
+    <app-navbar></app-navbar>
+
+    <main class="container mx-auto relative">
+        <section id="hero" class="px-20 py-40">
+            <div class="flex flex-row">
+                <!-- Left -->
+                <div class="flex flex-row justify-between w-full">
+                    <!-- Intro Text & CTA -->
+                    <div class="flex flex-col gap-10 z-20">
+                        <h1 class="text-6xl font-bold text-fullgray max-w-lg tracking-normal leading-normal">Hello, I'm Yudistira Eka Pratama</h1>
+                        <button class="py-5 px-10 self-stretch lg:self-start bg-red-100 text-read uppercase tracking-[0.3em] hover:bg-gray-600 hover:text-white">
+                            Download CV
+                        </button>
+                    </div>
+                    <!-- ! Intro Text & CTA -->
+                
+                    <!-- Divider -->
+                    <div class="h-60 w-0.5 bg-gray-200"></div>
+                    <!-- ! Divider -->
+                    
+                    <!-- Description -->
+                    <p class="text-sm font-normal text-fullgray max-w-lg tracking-normal leading-loose">
+                        I have a strong foundation in Software Engineering, specializing in web development with Angular for front-end and Laravel for back-end. I design dynamic user interfaces and build robust applications, ensuring seamless front-end and back-end interactions and efficient MySQL database management. I'm also skilled in Multi-Platform App Development using Dart and Flutter, utilizing state management techniques like GetX and bLoc. As a versatile Full Stack Developer, I'm committed to delivering tailored solutions. For more details, please download my CV.
+                    </p>
+                    <!-- ! Description -->
+                </div>
+                <!-- ! Left -->
+
+                <!-- Right -->
+                <div class="bg-subtlegray w-[90%] h-[560px] absolute top-0 -right-20 z-0 opacity-20"></div>
+                <!-- ! Right -->
+            </div>
+        </section>
+
+        <section id="work" class="px-20 py-40">
+            <h2 class="text-5xl font-bold text-fullgray tracking-normal leading-normal mb-14">Work Experience</h2>
+
+            <div class="grid grid-cols-6 gap-4">
+                <!-- Left -->
+                <div class="col-span-2">
+                    <div class="flex flex-col gap-1">
+                        <h4 class="font-medium text-2xl text-lightgray">Full Stack Developer</h4>
+                        <p class="font-normal text-sm text-fullgray">December &bull; 2022 - 2023</p>
+                    </div>
+                </div>
+                <!-- !Left -->
+
+                <!-- Right -->
+                <div class="col-span-4">
+                    <div class="flex flex-col gap-2">
+                        <p class="font-normal text-sm text-fullgray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus odio harum veritatis ab maxime ullam.</p>
+                        
+                        <ul class="flex flex-row gap-2">
+                            <li class="rounded-full bg-subtlegray px-4 py-1 text-sm text-read">HTML</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- !Right -->
+            </div>
+        </section>
+
+        <section id="project" class="px-20 py-40">
+            <h2 class="text-5xl font-bold text-fullgray tracking-normal leading-normal mb-14">Project</h2>
+
+            <div class="flex flex-col gap-40">
+                <div class="grid grid-cols-6 gap-16 items-start">
+                    <!-- Left -->
+                    <div class="col-span-3">
+                        <img src="/assets/images/Background-Image-1.png" class="w-full h-[590px] object-cover" alt="Project 1">
+                    </div>
+                    <!-- !Left -->
+    
+                    <!-- Right -->
+                    <div class="col-span-3">
+                        <div class="flex flex-col gap-1 mt-20">
+                            <h3 class="font-bold text-3xl text-lightgray mb-4">Project 1</h3>
+                            <p class="leading-7 font-normal text-sm text-lightgray/80 max-w-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ducimus nisi dolor inventore temporibus fuga tempora deserunt cum explicabo vero saepe repellat, iure id amet excepturi ipsum maiores ab quod?</p>
+                        </div>
+                    </div>
+                    <!-- !Right -->
+                </div>
+                
+                <div class="grid grid-cols-6 gap-16 items-start">
+                    <!-- Left -->
+                    <div class="col-span-3 order-2">
+                        <img src="/assets/images/Background-Image-2.png" class="w-full h-[590px] object-cover" alt="Project 2">
+                    </div>
+                    <!-- !Left -->
+    
+                    <!-- Right -->
+                    <div class="col-span-3 order-1">
+                        <div class="flex flex-col gap-1 mt-20 items-end">
+                            <h3 class="font-bold text-3xl text-lightgray mb-4">Project 2</h3>
+                            <p class="leading-7 font-normal text-sm text-lightgray/80 max-w-md text-end">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni voluptatem architecto velit aliquam illo sint, deleniti esse recusandae voluptate ipsa, dignissimos tempora! Dolore repellat qsa.</p>
+                        </div>
+                    </div>
+                    <!-- !Right -->
+                </div>
+
+                <div class="grid grid-cols-6 gap-16 items-start">
+                    <!-- Left -->
+                    <div class="col-span-3">
+                        <img src="/assets/images/Background-Image-3.png" class="w-full h-[590px] object-cover" alt="Project 1">
+                    </div>
+                    <!-- !Left -->
+    
+                    <!-- Right -->
+                    <div class="col-span-3">
+                        <div class="flex flex-col gap-1 mt-20">
+                            <h3 class="font-bold text-3xl text-lightgray mb-4">Project 3</h3>
+                            <p class="leading-7 font-normal text-sm text-lightgray/80 max-w-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quo quibusdam vitae libero laboriosam consectetur dolores, molestiae aspernatur id, ea iusto accusantium nemo reprehenderit. Magnam iste est amet perferendis nihil esse error assumenda voluptatibus sequi, dicta officia molestiae odit, reiciendis qui minus porro excepturi earum accusantium sapiente velit fuga! Esse?</p>
+                        </div>
+                    </div>
+                    <!-- !Right -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <app-footer></app-footer>
+</div>
